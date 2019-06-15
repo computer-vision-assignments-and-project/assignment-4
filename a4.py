@@ -12,8 +12,8 @@ import copy
 import math
 
 #Q1
-img1 = mpimg.imread('Flowerpots/view1.png')	
-img2 = mpimg.imread('Flowerpots/view5.png')
+img1 = mpimg.imread('aloeL.png')	
+img2 = mpimg.imread('aloeR.png')
 
 blur1 = cv2.GaussianBlur(img1,(15,15),0)  
 blur2 = cv2.GaussianBlur(img2,(31,31),0)
@@ -61,4 +61,4 @@ for i in range(0,len(magnitude_spectrum)):
 	sigma_relative.append(temp)
 sigma_relative = np.asarray(sigma_relative)
 
-print sigma_relative
+print(sigma_relative)
